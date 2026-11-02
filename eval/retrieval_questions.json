@@ -1,0 +1,20 @@
+[
+  {"id": "q01", "question": "¿Dónde puedo comer pizza en Garachico?", "expected": ["Pizzería Rugantino"]},
+  {"id": "q02", "question": "¿Qué árbol milenario famoso hay en Icod de los Vinos?", "expected": ["Drago Milenario"]},
+  {"id": "q03", "question": "¿Qué playa de Anaga es buena para ver el atardecer?", "expected": ["Playa de Benijo"]},
+  {"id": "q04", "question": "¿Cuál es el mejor mirador para ver un mar de nubes camino del Teide?", "expected": ["Mirador de La Tarta"]},
+  {"id": "q05", "question": "¿Qué parque acuático merece la pena en el sur?", "expected": ["Siam Park"]},
+  {"id": "q06", "question": "¿Hay alguna playa nudista?", "expected": ["La Tejita es playa nudista"]},
+  {"id": "q07", "question": "¿Qué es un guachinche y cuál recomiendan?", "expected": ["Guachinche El Cubano"]},
+  {"id": "q08", "question": "¿Dónde puedo ver delfines y ballenas?", "expected": ["Los Gigantes"]},
+  {"id": "q09", "question": "¿Cómo se llega a Punta de Teno?", "expected": ["línea 369"]},
+  {"id": "q10", "question": "¿Qué tengo que reservar con antelación para visitar un barranco?", "expected": ["barranco de Masca"]},
+  {"id": "q11", "question": "¿Dónde puedo comprar gofio?", "expected": ["molino de Chano"]},
+  {"id": "q12", "question": "¿Qué beach club es famoso por sus fiestas?", "expected": ["Papagayo Beach Club"]},
+  {"id": "q13", "question": "¿Qué hay para ver en el Puerto de la Cruz con niños o animales?", "expected": ["Loro Parque"]},
+  {"id": "q14", "question": "¿Cuál es el récord Guinness de La Orotava?", "expected": ["mayor tapiz de tierra"]},
+  {"id": "q15", "question": "¿Qué curiosidad tiene el reloj de la iglesia de La Laguna?", "expected": ["IIII"]},
+  {"id": "q16", "question": "¿Dónde comer arepas?", "expected": ["Arepera La Carajita"]},
+  {"id": "q17", "question": "¿Qué piscinas naturales hay en Santa Cruz?", "expected": ["Parque Marítimo César Manrique"]},
+  {"id": "q18", "question": "¿Qué pastelería recomiendan en Buenavista?", "expected": ["El Aderno"]}
+]

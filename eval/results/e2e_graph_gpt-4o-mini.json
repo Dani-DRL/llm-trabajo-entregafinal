@@ -1,0 +1,1048 @@
+{
+ "system": "graph",
+ "date": "2026-10-26",
+ "model": "gpt-4o-mini",
+ "params": {
+  "temperature": 0.2,
+  "top_p": 0.9
+ },
+ "rows": [
+  {
+   "id": "a02",
+   "category": "rag_answerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "sources_include": true
+   },
+   "route": "rag",
+   "latency_s": 3.5,
+   "text": "El Siam Park tiene 5 récords mundiales [1].",
+   "sources": [
+    "[1] Costa Adeje (págs. 20–21)"
+   ],
+   "tool_called": false,
+   "error": null,
+   "run": 1
+  },
+  {
+   "id": "a03",
+   "category": "rag_answerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "sources_include": true
+   },
+   "route": "rag",
+   "latency_s": 2.1,
+   "text": "La Playa de Benijo es conocida por tener unos de los atardeceres más espectaculares de la isla, especialmente si el día está despejado [2].",
+   "sources": [
+    "[2] Parque rural de Anaga (pág. 8)"
+   ],
+   "tool_called": false,
+   "error": null,
+   "run": 1
+  },
+  {
+   "id": "a06",
+   "category": "rag_answerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "sources_include": true
+   },
+   "route": "rag",
+   "latency_s": 2.8,
+   "text": "Puedes comer pizza en Garachico en la Pizzería Rugantino, que es muy buena. Te recomiendo consultar los horarios antes de ir [1].",
+   "sources": [
+    "[1] Isla Baja (Icod de los Vinos, Garachico y Punta de Teno) (pág. 12)"
+   ],
+   "tool_called": false,
+   "error": null,
+   "run": 1
+  },
+  {
+   "id": "a07",
+   "category": "rag_answerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "sources_include": true
+   },
+   "route": "rag",
+   "latency_s": 2.2,
+   "text": "Puedes comprar gofio en el molino de Chano, que se encuentra al final de la calle donde están la Iglesia de La Concepción, la casa Lercaro y la Casa de los Balcones en La Orotava [1].",
+   "sources": [
+    "[1] La Orotava (pág. 9)"
+   ],
+   "tool_called": false,
+   "error": null,
+   "run": 1
+  },
+  {
+   "id": "u01",
+   "category": "rag_unanswerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "refusal": true,
+    "forbidden": true
+   },
+   "route": "rag",
+   "latency_s": 1.5,
+   "text": "No tengo esa información en la guía.",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 1
+  },
+  {
+   "id": "u03",
+   "category": "rag_unanswerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "refusal": true
+   },
+   "route": "other",
+   "latency_s": 0.6,
+   "text": "Soy un asistente turístico de Tenerife: puedo ayudarte con lugares, playas, rutas, comida y la predicción del tiempo. Fuera de eso no puedo ayudarte. Puedes preguntarme, por ejemplo:\n- ¿Qué playa de Anaga es buena para ver el atardecer?\n- ¿Dónde puedo comer en La Orotava?\n- ¿Qué tiempo hará mañana?",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 1
+  },
+  {
+   "id": "u04",
+   "category": "rag_unanswerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "refusal": true
+   },
+   "route": "other",
+   "latency_s": 0.6,
+   "text": "Soy un asistente turístico de Tenerife: puedo ayudarte con lugares, playas, rutas, comida y la predicción del tiempo. Fuera de eso no puedo ayudarte. Puedes preguntarme, por ejemplo:\n- ¿Qué playa de Anaga es buena para ver el atardecer?\n- ¿Dónde puedo comer en La Orotava?\n- ¿Qué tiempo hará mañana?",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 1
+  },
+  {
+   "id": "w02",
+   "category": "weather_ok",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "weather_offset": true
+   },
+   "route": "weather",
+   "latency_s": 3.4,
+   "text": "Mañana, 27 de octubre de 2026, se espera un día nublado con una temperatura máxima de 26.7 °C y una mínima de 22.3 °C. No se prevé precipitación. ¡Disfruta de tu día!",
+   "sources": [],
+   "tool_called": true,
+   "error": null,
+   "run": 1
+  },
+  {
+   "id": "w04",
+   "category": "weather_ok",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "weather_offset": true
+   },
+   "route": "weather",
+   "latency_s": 2.9,
+   "text": "Dentro de 3 días, el jueves 29 de octubre de 2026, se espera un día nublado, con una temperatura máxima de 25.6 °C y una mínima de 20.2 °C. No se prevé precipitación. ¡Perfecto para disfrutar de actividades al aire libre!",
+   "sources": [],
+   "tool_called": true,
+   "error": null,
+   "run": 1
+  },
+  {
+   "id": "w05",
+   "category": "weather_ok",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "weather_offset": true
+   },
+   "route": "weather",
+   "latency_s": 3.5,
+   "text": "El tiempo para el lunes 2 de noviembre de 2026 se espera que esté nublado, con una temperatura máxima de 27.0 °C y una mínima de 21.5 °C. También se prevé una ligera precipitación de 0.4 mm.",
+   "sources": [],
+   "tool_called": true,
+   "error": null,
+   "run": 1
+  },
+  {
+   "id": "e01",
+   "category": "weather_error",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "forbidden": true,
+    "weather_error": true
+   },
+   "route": "weather",
+   "latency_s": 2.6,
+   "text": "Lo siento, pero no puedo proporcionar información sobre el tiempo pasado. Solo tengo acceso a predicciones meteorológicas. Si necesitas saber el clima para hoy o en los próximos días, estaré encantado de ayudarte.",
+   "sources": [],
+   "tool_called": true,
+   "error": null,
+   "run": 1
+  },
+  {
+   "id": "e03",
+   "category": "weather_error",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "forbidden": true,
+    "weather_error": true
+   },
+   "route": "weather",
+   "latency_s": 1.5,
+   "text": "No puedo proporcionar información sobre el tiempo más allá de 15 días. Sin embargo, puedo ayudarte con la previsión del tiempo para los próximos días. ¿Te gustaría saber el tiempo para alguna fecha específica dentro de ese rango?",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 1
+  },
+  {
+   "id": "e04",
+   "category": "weather_error",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "forbidden": true,
+    "weather_error": true
+   },
+   "route": "weather",
+   "latency_s": 1.7,
+   "text": "El 30 de febrero no existe, ya que febrero solo tiene 28 días en años comunes y 29 días en años bisiestos. Si necesitas información sobre el tiempo en otra fecha, estaré encantado de ayudarte.",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 1
+  },
+  {
+   "id": "m01",
+   "category": "multi_turn",
+   "passed": false,
+   "checks": {
+    "no_crash": true,
+    "contains": false,
+    "sources_include": false
+   },
+   "route": "other",
+   "latency_s": 0.8,
+   "text": "Soy un asistente turístico de Tenerife: puedo ayudarte con lugares, playas, rutas, comida y la predicción del tiempo. Fuera de eso no puedo ayudarte. Puedes preguntarme, por ejemplo:\n- ¿Qué playa de Anaga es buena para ver el atardecer?\n- ¿Dónde puedo comer en La Orotava?\n- ¿Qué tiempo hará mañana?",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 1
+  },
+  {
+   "id": "m03",
+   "category": "multi_turn",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "sources_include": true
+   },
+   "route": "rag",
+   "latency_s": 3.1,
+   "text": "La Orotava tiene tres playas: la Playa del Bollullo, la Playa de Los Patos y la Playa del Ancón. Ten en cuenta que para llegar a estas playas hay que caminar un rato y algunas son de difícil acceso, especialmente la de Los Patos. Además, es recomendable visitarlas cuando la marea esté baja y tener respeto al mar, ya que la corriente puede ser traicionera [1][2].",
+   "sources": [
+    "[1] La Orotava (págs. 9–11)",
+    "[2] La Orotava (págs. 9–10)"
+   ],
+   "tool_called": false,
+   "error": null,
+   "run": 1
+  },
+  {
+   "id": "m04",
+   "category": "multi_turn",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "weather_offset": true
+   },
+   "route": "weather",
+   "latency_s": 3.2,
+   "text": "Pasado mañana, 28 de octubre de 2026, se espera un día nublado con una temperatura máxima de 25.6 °C y una mínima de 21.3 °C. No se prevén precipitaciones. ¡Espero que disfrutes de tu día!",
+   "sources": [],
+   "tool_called": true,
+   "error": null,
+   "run": 1
+  },
+  {
+   "id": "x01",
+   "category": "edge_case",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "forbidden": true
+   },
+   "route": "other",
+   "latency_s": 0.7,
+   "text": "Soy un asistente turístico de Tenerife: puedo ayudarte con lugares, playas, rutas, comida y la predicción del tiempo. Fuera de eso no puedo ayudarte. Puedes preguntarme, por ejemplo:\n- ¿Qué playa de Anaga es buena para ver el atardecer?\n- ¿Dónde puedo comer en La Orotava?\n- ¿Qué tiempo hará mañana?",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 1
+  },
+  {
+   "id": "x04",
+   "category": "edge_case",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "route": true
+   },
+   "route": "weather",
+   "latency_s": 6.4,
+   "text": "Mañana, martes 27 de octubre de 2026, se espera un día nublado con temperaturas que oscilarán entre los 22.3 °C y 26.7 °C, sin precipitaciones. El miércoles 28 de octubre también se prevé un día nublado, con temperaturas entre 21.3 °C y 25.6 °C, igualmente sin lluvias.\n\nEn cuanto al Teide, hay muchas cosas que puedes ver y hacer:\n\n1. **Teleférico del Teide**: Puedes subir en teleférico hasta cerca de la cima del volcán, donde disfrutarás de vistas espectaculares.\n\n2. **Senderismo**: Hay varias rutas de senderismo, como la que lleva a la cima del Teide (requiere un permiso) o rutas más accesibles como la de los Roques de García.\n\n3. **Observación de estrellas**: El Teide es un lugar privilegiado para la astronomía. Si te quedas hasta la noche, puedes disfrutar de un cielo estrellado impresionante.\n\n4. **Centro de Visitantes**: Puedes aprender sobre la flora, fauna y geología del parque en el centro de visitantes.\n\n5. **Fotografía**: Las vistas panorámicas y los paisajes únicos hacen del Teide un lugar ideal para la fotografía.\n\nRecuerda llevar ropa adecuada y suficiente agua, ya que el clima puede ser variable y la altitud puede afectar. ¡Disfruta de tu visita!",
+   "sources": [],
+   "tool_called": true,
+   "error": null,
+   "run": 1
+  },
+  {
+   "id": "x05",
+   "category": "edge_case",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "route": true
+   },
+   "route": "other",
+   "latency_s": 0.6,
+   "text": "Soy un asistente turístico de Tenerife: puedo ayudarte con lugares, playas, rutas, comida y la predicción del tiempo. Fuera de eso no puedo ayudarte. Puedes preguntarme, por ejemplo:\n- ¿Qué playa de Anaga es buena para ver el atardecer?\n- ¿Dónde puedo comer en La Orotava?\n- ¿Qué tiempo hará mañana?",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 1
+  },
+  {
+   "id": "x06",
+   "category": "edge_case",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "sources_include": true
+   },
+   "route": "rag",
+   "latency_s": 2.2,
+   "text": "Puedes comprar gofio en el molino de Chano, que se encuentra en La Orotava [4].",
+   "sources": [
+    "[4] La Orotava (pág. 9)"
+   ],
+   "tool_called": false,
+   "error": null,
+   "run": 1
+  },
+  {
+   "id": "a02",
+   "category": "rag_answerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "sources_include": true
+   },
+   "route": "rag",
+   "latency_s": 1.3,
+   "text": "El Siam Park tiene 5 récords mundiales [1].",
+   "sources": [
+    "[1] Costa Adeje (págs. 20–21)"
+   ],
+   "tool_called": false,
+   "error": null,
+   "run": 2
+  },
+  {
+   "id": "a03",
+   "category": "rag_answerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "sources_include": true
+   },
+   "route": "rag",
+   "latency_s": 1.8,
+   "text": "La playa de Benijo es conocida por tener unos de los atardeceres más espectaculares de la isla, especialmente si el día está despejado [2].",
+   "sources": [
+    "[2] Parque rural de Anaga (pág. 8)"
+   ],
+   "tool_called": false,
+   "error": null,
+   "run": 2
+  },
+  {
+   "id": "a06",
+   "category": "rag_answerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "sources_include": true
+   },
+   "route": "rag",
+   "latency_s": 1.6,
+   "text": "Puedes comer pizza en Garachico en la Pizzería Rugantino, que es muy buena. Te recomiendo consultar los horarios antes de ir [1].",
+   "sources": [
+    "[1] Isla Baja (Icod de los Vinos, Garachico y Punta de Teno) (pág. 12)"
+   ],
+   "tool_called": false,
+   "error": null,
+   "run": 2
+  },
+  {
+   "id": "a07",
+   "category": "rag_answerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "sources_include": true
+   },
+   "route": "rag",
+   "latency_s": 1.9,
+   "text": "Puedes comprar gofio en el molino de Chano, que se encuentra al final de la calle donde están la Iglesia de La Concepción, la casa Lercaro y la Casa de los Balcones en La Orotava [1].",
+   "sources": [
+    "[1] La Orotava (pág. 9)"
+   ],
+   "tool_called": false,
+   "error": null,
+   "run": 2
+  },
+  {
+   "id": "u01",
+   "category": "rag_unanswerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "refusal": true,
+    "forbidden": true
+   },
+   "route": "rag",
+   "latency_s": 1.5,
+   "text": "No tengo esa información en la guía.",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 2
+  },
+  {
+   "id": "u03",
+   "category": "rag_unanswerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "refusal": true
+   },
+   "route": "other",
+   "latency_s": 0.7,
+   "text": "Soy un asistente turístico de Tenerife: puedo ayudarte con lugares, playas, rutas, comida y la predicción del tiempo. Fuera de eso no puedo ayudarte. Puedes preguntarme, por ejemplo:\n- ¿Qué playa de Anaga es buena para ver el atardecer?\n- ¿Dónde puedo comer en La Orotava?\n- ¿Qué tiempo hará mañana?",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 2
+  },
+  {
+   "id": "u04",
+   "category": "rag_unanswerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "refusal": true
+   },
+   "route": "other",
+   "latency_s": 0.6,
+   "text": "Soy un asistente turístico de Tenerife: puedo ayudarte con lugares, playas, rutas, comida y la predicción del tiempo. Fuera de eso no puedo ayudarte. Puedes preguntarme, por ejemplo:\n- ¿Qué playa de Anaga es buena para ver el atardecer?\n- ¿Dónde puedo comer en La Orotava?\n- ¿Qué tiempo hará mañana?",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 2
+  },
+  {
+   "id": "w02",
+   "category": "weather_ok",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "weather_offset": true
+   },
+   "route": "weather",
+   "latency_s": 2.9,
+   "text": "Mañana, martes 27 de octubre de 2026, se espera un día nublado con temperaturas que oscilarán entre 22.3 °C y 26.7 °C. No se prevén precipitaciones. ¡Disfruta de tu día!",
+   "sources": [],
+   "tool_called": true,
+   "error": null,
+   "run": 2
+  },
+  {
+   "id": "w04",
+   "category": "weather_ok",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "weather_offset": true
+   },
+   "route": "weather",
+   "latency_s": 2.8,
+   "text": "Dentro de 3 días, el 29 de octubre de 2026, se espera un día nublado, con una temperatura máxima de 25.6 °C y una mínima de 20.2 °C. No se prevén precipitaciones.",
+   "sources": [],
+   "tool_called": true,
+   "error": null,
+   "run": 2
+  },
+  {
+   "id": "w05",
+   "category": "weather_ok",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "weather_offset": true
+   },
+   "route": "weather",
+   "latency_s": 3.3,
+   "text": "El tiempo para el lunes 2 de noviembre de 2026 se espera que esté nublado, con una temperatura máxima de 27.0 °C y una mínima de 21.5 °C. También se prevé una ligera precipitación de 0.4 mm.",
+   "sources": [],
+   "tool_called": true,
+   "error": null,
+   "run": 2
+  },
+  {
+   "id": "e01",
+   "category": "weather_error",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "forbidden": true,
+    "weather_error": true
+   },
+   "route": "weather",
+   "latency_s": 2.4,
+   "text": "Lo siento, pero no puedo proporcionar información sobre el tiempo pasado. Solo tengo acceso a predicciones futuras. Si necesitas saber el clima para los próximos días, estaré encantado de ayudarte.",
+   "sources": [],
+   "tool_called": true,
+   "error": null,
+   "run": 2
+  },
+  {
+   "id": "e03",
+   "category": "weather_error",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "forbidden": true,
+    "weather_error": true
+   },
+   "route": "weather",
+   "latency_s": 1.8,
+   "text": "No puedo proporcionar información sobre el tiempo más allá de 15 días. Sin embargo, puedo ayudarte con la predicción del tiempo para los próximos días. ¿Te gustaría saber el tiempo para alguna fecha específica dentro de ese rango?",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 2
+  },
+  {
+   "id": "e04",
+   "category": "weather_error",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "forbidden": true,
+    "weather_error": true
+   },
+   "route": "weather",
+   "latency_s": 1.7,
+   "text": "El 30 de febrero no existe, ya que febrero solo tiene 28 días en años comunes y 29 en años bisiestos. Si necesitas información sobre el tiempo en otra fecha, estaré encantado de ayudarte.",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 2
+  },
+  {
+   "id": "m01",
+   "category": "multi_turn",
+   "passed": false,
+   "checks": {
+    "no_crash": true,
+    "contains": false,
+    "sources_include": false
+   },
+   "route": "other",
+   "latency_s": 0.7,
+   "text": "Soy un asistente turístico de Tenerife: puedo ayudarte con lugares, playas, rutas, comida y la predicción del tiempo. Fuera de eso no puedo ayudarte. Puedes preguntarme, por ejemplo:\n- ¿Qué playa de Anaga es buena para ver el atardecer?\n- ¿Dónde puedo comer en La Orotava?\n- ¿Qué tiempo hará mañana?",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 2
+  },
+  {
+   "id": "m03",
+   "category": "multi_turn",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "sources_include": true
+   },
+   "route": "rag",
+   "latency_s": 3.7,
+   "text": "La Orotava tiene tres playas: La Playa del Bollullo, La Playa de Los Patos y la Playa del Ancón. Ten en cuenta que para llegar a estas playas hay que caminar un rato y algunas son de difícil acceso, especialmente la de Los Patos. Además, es recomendable ir cuando la marea esté baja y tener respeto al mar, ya que la corriente puede ser traicionera [1][2].",
+   "sources": [
+    "[1] La Orotava (págs. 9–11)",
+    "[2] La Orotava (págs. 9–10)"
+   ],
+   "tool_called": false,
+   "error": null,
+   "run": 2
+  },
+  {
+   "id": "m04",
+   "category": "multi_turn",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "weather_offset": true
+   },
+   "route": "weather",
+   "latency_s": 2.9,
+   "text": "Pasado mañana, 28 de octubre de 2026, se espera un día nublado con una temperatura máxima de 25.6 °C y una mínima de 21.3 °C. No se prevé precipitación. ¡Espero que disfrutes tu día!",
+   "sources": [],
+   "tool_called": true,
+   "error": null,
+   "run": 2
+  },
+  {
+   "id": "x01",
+   "category": "edge_case",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "forbidden": true
+   },
+   "route": "other",
+   "latency_s": 0.5,
+   "text": "Soy un asistente turístico de Tenerife: puedo ayudarte con lugares, playas, rutas, comida y la predicción del tiempo. Fuera de eso no puedo ayudarte. Puedes preguntarme, por ejemplo:\n- ¿Qué playa de Anaga es buena para ver el atardecer?\n- ¿Dónde puedo comer en La Orotava?\n- ¿Qué tiempo hará mañana?",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 2
+  },
+  {
+   "id": "x04",
+   "category": "edge_case",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "route": true
+   },
+   "route": "weather",
+   "latency_s": 5.8,
+   "text": "Mañana, martes 27 de octubre de 2026, se espera un día nublado con temperaturas que oscilarán entre los 22.3 °C y 26.7 °C, sin precipitaciones. El miércoles 28 de octubre también se prevé un día nublado, con temperaturas entre 21.3 °C y 25.6 °C, igualmente sin lluvias.\n\nEn cuanto al Teide, hay muchas cosas que puedes ver y hacer:\n\n1. **Teleférico del Teide**: Puedes subir en teleférico hasta cerca de la cima del volcán, donde disfrutarás de vistas espectaculares.\n\n2. **Senderismo**: Hay varias rutas de senderismo, como la ruta que lleva a la cima del Teide (requiere un permiso) o rutas más accesibles como la de los Roques de García.\n\n3. **Observación de estrellas**: El Teide es un lugar privilegiado para la astronomía, así que si te quedas hasta la noche, no te pierdas la oportunidad de observar las estrellas.\n\n4. **Centro de Visitantes**: Puedes aprender sobre la flora, fauna y geología del parque en el centro de visitantes.\n\n5. **Fotografía**: Las vistas y paisajes son impresionantes, así que asegúrate de llevar tu cámara.\n\nRecuerda llevar ropa adecuada, ya que las temperaturas pueden ser más frescas en la cima. ¡Disfruta de tu visita al Teide!",
+   "sources": [],
+   "tool_called": true,
+   "error": null,
+   "run": 2
+  },
+  {
+   "id": "x05",
+   "category": "edge_case",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "route": true
+   },
+   "route": "other",
+   "latency_s": 0.7,
+   "text": "Soy un asistente turístico de Tenerife: puedo ayudarte con lugares, playas, rutas, comida y la predicción del tiempo. Fuera de eso no puedo ayudarte. Puedes preguntarme, por ejemplo:\n- ¿Qué playa de Anaga es buena para ver el atardecer?\n- ¿Dónde puedo comer en La Orotava?\n- ¿Qué tiempo hará mañana?",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 2
+  },
+  {
+   "id": "x06",
+   "category": "edge_case",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "sources_include": true
+   },
+   "route": "rag",
+   "latency_s": 2.4,
+   "text": "Puedes comprar gofio en el molino de Chano, que se encuentra en La Orotava [4].",
+   "sources": [
+    "[4] La Orotava (pág. 9)"
+   ],
+   "tool_called": false,
+   "error": null,
+   "run": 2
+  },
+  {
+   "id": "a02",
+   "category": "rag_answerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "sources_include": true
+   },
+   "route": "rag",
+   "latency_s": 1.5,
+   "text": "El Siam Park tiene 5 récords mundiales [1].",
+   "sources": [
+    "[1] Costa Adeje (págs. 20–21)"
+   ],
+   "tool_called": false,
+   "error": null,
+   "run": 3
+  },
+  {
+   "id": "a03",
+   "category": "rag_answerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "sources_include": true
+   },
+   "route": "rag",
+   "latency_s": 1.6,
+   "text": "La Playa de Benijo es conocida por tener unos de los atardeceres más espectaculares de la isla, especialmente si el día está despejado [2].",
+   "sources": [
+    "[2] Parque rural de Anaga (pág. 8)"
+   ],
+   "tool_called": false,
+   "error": null,
+   "run": 3
+  },
+  {
+   "id": "a06",
+   "category": "rag_answerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "sources_include": true
+   },
+   "route": "rag",
+   "latency_s": 1.7,
+   "text": "Puedes comer pizza en Garachico en la Pizzería Rugantino, que es muy buena. Te recomiendo consultar los horarios antes de ir [1].",
+   "sources": [
+    "[1] Isla Baja (Icod de los Vinos, Garachico y Punta de Teno) (pág. 12)"
+   ],
+   "tool_called": false,
+   "error": null,
+   "run": 3
+  },
+  {
+   "id": "a07",
+   "category": "rag_answerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "sources_include": true
+   },
+   "route": "rag",
+   "latency_s": 1.8,
+   "text": "Puedes comprar gofio en el molino de Chano, que se encuentra al final de la calle donde están la Iglesia de La Concepción, la casa Lercaro y la Casa de los Balcones en La Orotava [1].",
+   "sources": [
+    "[1] La Orotava (pág. 9)"
+   ],
+   "tool_called": false,
+   "error": null,
+   "run": 3
+  },
+  {
+   "id": "u01",
+   "category": "rag_unanswerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "refusal": true,
+    "forbidden": true
+   },
+   "route": "rag",
+   "latency_s": 1.5,
+   "text": "No tengo esa información en la guía.",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 3
+  },
+  {
+   "id": "u03",
+   "category": "rag_unanswerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "refusal": true
+   },
+   "route": "rag",
+   "latency_s": 1.4,
+   "text": "No tengo esa información en la guía.",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 3
+  },
+  {
+   "id": "u04",
+   "category": "rag_unanswerable",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "refusal": true
+   },
+   "route": "other",
+   "latency_s": 0.6,
+   "text": "Soy un asistente turístico de Tenerife: puedo ayudarte con lugares, playas, rutas, comida y la predicción del tiempo. Fuera de eso no puedo ayudarte. Puedes preguntarme, por ejemplo:\n- ¿Qué playa de Anaga es buena para ver el atardecer?\n- ¿Dónde puedo comer en La Orotava?\n- ¿Qué tiempo hará mañana?",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 3
+  },
+  {
+   "id": "w02",
+   "category": "weather_ok",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "weather_offset": true
+   },
+   "route": "weather",
+   "latency_s": 3.4,
+   "text": "Mañana, 27 de octubre de 2026, se espera un día nublado con una temperatura máxima de 26.7 °C y una mínima de 22.3 °C. No se anticipa precipitación. ¡Disfruta tu día!",
+   "sources": [],
+   "tool_called": true,
+   "error": null,
+   "run": 3
+  },
+  {
+   "id": "w04",
+   "category": "weather_ok",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "weather_offset": true
+   },
+   "route": "weather",
+   "latency_s": 3.1,
+   "text": "Dentro de 3 días, el jueves 29 de octubre de 2026, se espera un día nublado, con una temperatura máxima de 25.6 °C y una mínima de 20.2 °C. No se prevé precipitación.",
+   "sources": [],
+   "tool_called": true,
+   "error": null,
+   "run": 3
+  },
+  {
+   "id": "w05",
+   "category": "weather_ok",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "weather_offset": true
+   },
+   "route": "weather",
+   "latency_s": 2.8,
+   "text": "El tiempo para el lunes 2 de noviembre de 2026 se espera que esté nublado, con una temperatura máxima de 27.0 °C y una mínima de 21.5 °C. También se prevé una ligera precipitación de 0.4 mm.",
+   "sources": [],
+   "tool_called": true,
+   "error": null,
+   "run": 3
+  },
+  {
+   "id": "e01",
+   "category": "weather_error",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "forbidden": true,
+    "weather_error": true
+   },
+   "route": "weather",
+   "latency_s": 2.7,
+   "text": "Lo siento, pero no puedo proporcionar información sobre el tiempo pasado. Solo tengo acceso a las predicciones del clima. Si necesitas información sobre el clima para hoy o en los próximos días, estaré encantado de ayudarte.",
+   "sources": [],
+   "tool_called": true,
+   "error": null,
+   "run": 3
+  },
+  {
+   "id": "e03",
+   "category": "weather_error",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "forbidden": true,
+    "weather_error": true
+   },
+   "route": "weather",
+   "latency_s": 1.7,
+   "text": "No puedo proporcionar información sobre el clima a tan largo plazo. Sin embargo, puedo darte la predicción del tiempo para los próximos 15 días. Si deseas saber el clima para una fecha específica dentro de ese rango, házmelo saber.",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 3
+  },
+  {
+   "id": "e04",
+   "category": "weather_error",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "forbidden": true,
+    "weather_error": true
+   },
+   "route": "weather",
+   "latency_s": 1.8,
+   "text": "El 30 de febrero no es una fecha válida, ya que febrero solo tiene 28 días en años comunes y 29 días en años bisiestos. Si necesitas información sobre el tiempo en otra fecha, estaré encantado de ayudarte.",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 3
+  },
+  {
+   "id": "m01",
+   "category": "multi_turn",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "sources_include": true
+   },
+   "route": "rag",
+   "latency_s": 2.3,
+   "text": "El Siam Park tiene 5 récords mundiales. [1]",
+   "sources": [
+    "[1] Costa Adeje (págs. 20–21)"
+   ],
+   "tool_called": false,
+   "error": null,
+   "run": 3
+  },
+  {
+   "id": "m03",
+   "category": "multi_turn",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "sources_include": true
+   },
+   "route": "rag",
+   "latency_s": 2.8,
+   "text": "La Orotava tiene tres playas: la Playa del Bollullo, la Playa de Los Patos y la Playa del Ancón. Ten en cuenta que algunas de estas playas son de difícil acceso y es recomendable visitarlas cuando la marea esté baja [1][2].",
+   "sources": [
+    "[1] La Orotava (págs. 9–11)",
+    "[2] La Orotava (págs. 9–10)"
+   ],
+   "tool_called": false,
+   "error": null,
+   "run": 3
+  },
+  {
+   "id": "m04",
+   "category": "multi_turn",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "weather_offset": true
+   },
+   "route": "weather",
+   "latency_s": 3.1,
+   "text": "Pasado mañana, 28 de octubre de 2026, se espera un día nublado con una temperatura máxima de 25.6 °C y una mínima de 21.3 °C. No se prevén precipitaciones. ¡Espero que disfrutes de tu tiempo en Tenerife!",
+   "sources": [],
+   "tool_called": true,
+   "error": null,
+   "run": 3
+  },
+  {
+   "id": "x01",
+   "category": "edge_case",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "forbidden": true
+   },
+   "route": "other",
+   "latency_s": 0.6,
+   "text": "Soy un asistente turístico de Tenerife: puedo ayudarte con lugares, playas, rutas, comida y la predicción del tiempo. Fuera de eso no puedo ayudarte. Puedes preguntarme, por ejemplo:\n- ¿Qué playa de Anaga es buena para ver el atardecer?\n- ¿Dónde puedo comer en La Orotava?\n- ¿Qué tiempo hará mañana?",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 3
+  },
+  {
+   "id": "x04",
+   "category": "edge_case",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "route": true
+   },
+   "route": "weather",
+   "latency_s": 6.4,
+   "text": "Mañana, martes 27 de octubre de 2026, se espera un día nublado con temperaturas que oscilarán entre los 22.3 °C y 26.7 °C, sin precipitaciones. El miércoles 28 de octubre también se prevé un día nublado, con temperaturas entre 21.3 °C y 25.6 °C, igualmente sin lluvias.\n\nEn cuanto al Teide, hay muchas cosas que puedes ver y hacer:\n\n1. **Teleférico del Teide**: Puedes subir en teleférico hasta cerca de la cima del volcán, donde disfrutarás de vistas espectaculares de la isla y, en días claros, incluso de las islas vecinas.\n\n2. **Senderismo**: Hay varias rutas de senderismo, como la que lleva a la cima del Teide (requiere un permiso) o rutas más accesibles como la de los Roques de García.\n\n3. **Observación de estrellas**: El Teide es un lugar privilegiado para la observación astronómica. Si te quedas hasta la noche, considera unirte a una excursión de observación de estrellas.\n\n4. **Centro de Visitantes**: Puedes aprender sobre la geología, flora y fauna del parque en el centro de visitantes.\n\n5. **Paisajes únicos**: No te pierdas los paisajes volcánicos y las formaciones rocosas que son características de la zona.\n\nRecuerda llevar ropa adecuada, ya que las temperaturas pueden ser más frescas en la cima. ¡Disfruta tu visita!",
+   "sources": [],
+   "tool_called": true,
+   "error": null,
+   "run": 3
+  },
+  {
+   "id": "x05",
+   "category": "edge_case",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "route": true
+   },
+   "route": "other",
+   "latency_s": 0.7,
+   "text": "Soy un asistente turístico de Tenerife: puedo ayudarte con lugares, playas, rutas, comida y la predicción del tiempo. Fuera de eso no puedo ayudarte. Puedes preguntarme, por ejemplo:\n- ¿Qué playa de Anaga es buena para ver el atardecer?\n- ¿Dónde puedo comer en La Orotava?\n- ¿Qué tiempo hará mañana?",
+   "sources": [],
+   "tool_called": false,
+   "error": null,
+   "run": 3
+  },
+  {
+   "id": "x06",
+   "category": "edge_case",
+   "passed": true,
+   "checks": {
+    "no_crash": true,
+    "contains": true,
+    "sources_include": true
+   },
+   "route": "rag",
+   "latency_s": 2.7,
+   "text": "Puedes comprar gofio en el molino de Chano, que se encuentra en La Orotava [4].",
+   "sources": [
+    "[4] La Orotava (pág. 9)"
+   ],
+   "tool_called": false,
+   "error": null,
+   "run": 3
+  }
+ ]
+}
